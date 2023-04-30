@@ -79,7 +79,7 @@ def get_token(productNo, api_id,api_pw):
 
     json_new_result = json.loads(result)
     json_new_result['originProduct']['detailContent']=""
-    # pprint.pprint(json_new_result)
+    pprint.pprint(json_new_result)
     json_new_result['originProduct']['statusType']="SALE"
     options=json_new_result['originProduct']['detailAttribute']['optionInfo']['optionCombinations']
     # pprint.pprint(options)
